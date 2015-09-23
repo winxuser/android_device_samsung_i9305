@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 The Android Open Source Project
+# Copyright (C) 2015 Haxynox project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_i9305.mk \
-    $(LOCAL_DIR)/full_i9305.mk \
+add_lunch_combo aosp_i9305-user
+add_lunch_combo aosp_i9305-userdebug
+add_lunch_combo aosp_i9305-eng
