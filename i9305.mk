@@ -72,9 +72,15 @@ PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
 
 PRODUCT_PACKAGES += \
-    com.android.nfc_extras
+    com.android.nfc_extras \
+    Stk \
+    SamsungServiceMode
 
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+
+# Samsung symbols
+PRODUCT_PACKAGES += \
+    libsamsung_symbols
 
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
