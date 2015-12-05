@@ -1,7 +1,7 @@
 # GFX
-/dev/mali                               u:object_r:mali_device:s0
-/dev/ump                                u:object_r:mali_device:s0
-/dev/fimg2d                             u:object_r:mali_device:s0
+/dev/mali                               u:object_r:gpu_device:s0
+/dev/ump                                u:object_r:gpu_device:s0
+/dev/fimg2d                             u:object_r:gpu_device:s0
 
 /dev/s3c-mfc				u:object_r:mfc_device:s0
 
@@ -72,6 +72,10 @@
 
 # Block devices
 /dev/block/mmcblk0(.*)                  u:object_r:boot_block_device:s0
+/dev/block/mmcblk0p3                    u:object_r:efs_block_device:s0
+/dev/block/mmcblk0p12                   u:object_r:cache_block_device:s0
+/dev/block/mmcblk0p13                   u:object_r:system_block_device:s0
+/dev/block/mmcblk0p16                   u:object_r:userdata_block_device:s0
 
 # Audio related
 /data/local/audio(/.*)?                 u:object_r:volume_data_file:s0

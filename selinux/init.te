@@ -13,4 +13,5 @@ allow init init:rawip_socket { create setopt write };
 allow init log_device:chr_file { write };
 allow init kernel:system { module_request };
 #allow init system_file:file execute_no_trans;
-
+allow init block_device:lnk_file { setattr };
+domain_trans(init, rootfs, SMD-daemon)

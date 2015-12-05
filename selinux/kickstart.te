@@ -50,5 +50,5 @@ allow kickstart kickstart:process { execmem };
 allow kickstart usbfs:dir { search };
 #allow kickstart system_file:file { entrypoint };
 allow kickstart vfat:dir { search };
-allow kickstart log_device:chr_file { write };
+allow kickstart log_device:chr_file { open write };
 

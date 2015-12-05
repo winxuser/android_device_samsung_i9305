@@ -4,7 +4,7 @@ type rfkill_device, dev_type;
 type wlan_device, dev_type;
 type modem_block_device, dev_type;
 type diagnostic_device, dev_type;
-#type efs_block_device, dev_type;
+type efs_block_device, dev_type;
 #type boot_block_device, dev_type;
 
 #SSR device
