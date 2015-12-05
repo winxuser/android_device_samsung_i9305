@@ -139,9 +139,6 @@
          audio routing, FORCE_BT_CAR_DOCK, with an analog dock, FORCE_ANALOG_DOCK.
     <bool name="config_forceAnalogCarDock">true</bool>  -->
    
-    <!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds. -->
-    <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- The RadioAccessFamilies supported by the device.
          Empty is viewed as "all".  Only used on devices which
          don't support RIL_REQUEST_GET_RADIO_CAPABILITY
